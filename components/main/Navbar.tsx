@@ -24,7 +24,7 @@ const Navbar = () => {
           </a>
       </div>
 
-        <div className=" w-[45%] h-full flex flex-row items-center justify-between md:mr-20">
+        <div className="hidden w-[45%] h-full md:flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a href="#about-me" className="cursor-pointer">
               About me
@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="w-[15%] flex flex-row gap-5">
+        <div className="md:w-[15%] flex flex-row gap-5">
           {Socials.map((social) => (
             <Image
               src={social.src}
